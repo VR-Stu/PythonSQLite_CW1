@@ -35,7 +35,6 @@ def fetch_schedules_by_licenceNumber(licenceNumber):
         return []
 
 def assign_flight(data):
-    print("wtf", data)
     query = """
         INSERT INTO schedules (FlightID, PilotID, AssignedDate)
         VALUES (?, ?, ?)
